@@ -1,0 +1,28 @@
+/*
+ * File: Hailstone.java
+ * --------------------
+ * This program is a stub for the Hailstone problem, which computes
+ * Hailstone sequence described in Assignment #2.
+ */
+
+import acm.program.*;
+
+public class Hailstone extends ConsoleProgram {
+	public void run() {
+		println("Enter a number and We'll Hailstone that tucker all the way down to one");
+		int n = readInt("Enter your number:");
+		while (n != 1){
+			if (n % 2== 0){
+				println("it was even so I divided it by 2 and got:" + n);
+				n = n/2;
+				}	
+				else { 
+					println("it was odd so I multiplied it by 3 then added one and got:"+ n);
+					n = 3*n+1;	
+		}
+				
+			
+		}	
+		println(n);
+	}	
+}
